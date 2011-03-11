@@ -86,6 +86,12 @@ if addon.playerClass == "ROGUE" then
 	vendettaBar.colors = {{150/255, 150/255, 0/255}}
 	vendettaBar.label:Hide()
 
+	-- Find Weakness
+	local fwDuration = 10
+	local fwBar = addon:CreateBar("target", 91023, fwDuration, 6)
+	fwBar.colors = {{150/255, 150/255, 0/255}}
+	fwBar.label:Hide()
+
 	-- Garotte
 	local garroteBar = addon:CreateBar("target", 703, garroteDuration, 6)
 	garroteBar.colors = {{150/255, 0/255, 0/255}}
